@@ -28,5 +28,19 @@ export const useGlobalStyles = () => {
         lineHeight: 24,
         color: theme === 'dark' ? colors.silver : colors.delftBlue,
     },
+    screen: {
+      flex: 1, 
+      justifyContent: 'center', 
+      alignItems: 'center',
+      backgroundColor: theme === 'dark' ? colors.night : colors.whiteSmoke
+    },
+    userScreen: {
+      paddingHorizontal: 20,
+      paddingVertical: 40,
+      flex: 1, 
+      justifyContent: 'flex-start', 
+      alignItems: 'flex-start',
+      backgroundColor: theme === 'dark' ? colors.night : colors.whiteSmoke
+    }
   });
 };

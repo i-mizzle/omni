@@ -22,17 +22,20 @@ export default function RootLayout() {
     <ThemeProvider>
       {/* <Slot /> */}
       <View style={{ flex: 1, backgroundColor: theme === 'dark' ? '#000' : '#fff' }}>
-      <StatusBar style={theme === 'dark' ? 'light' : 'dark'} backgroundColor={theme === 'dark' ? '#000' : '#fff'} />
-      <Stack 
-        screenOptions={{ 
-          headerShown: false, 
-          contentStyle: {
-            backgroundColor: theme === 'dark' ? '#000' : '#fff',
-          }, 
-          animation: 'fade',
-        }} 
-      />
-    </View>
+        <StatusBar 
+          style={theme === 'dark' ? 'light' : 'dark'} 
+          backgroundColor={theme === 'dark' ? '#000' : '#fff'} 
+        />
+        <Stack 
+          screenOptions={{ 
+            headerShown: false, 
+            contentStyle: {
+              backgroundColor: theme === 'dark' ? '#000' : '#fff',
+            }, 
+            animation: 'fade',
+          }} 
+        />
+      </View>
     </ThemeProvider>
   );
 }

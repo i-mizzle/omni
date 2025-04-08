@@ -135,7 +135,7 @@ const Login = () => {
                 buttonLabel="Log in"
                 processing={false}
                 disabled={false}
-                buttonAction={() => {}}
+                buttonAction={() => {router.replace('/views/user')}}
               />
   
               <View 
