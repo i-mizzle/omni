@@ -2,9 +2,9 @@ import { useTheme } from '@/app/providers/ThemeProvider'
 import { colors } from '@/static/colors'
 import React, { FC } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import ArrowIcon from '../elements/icons/ArrowIcon'
-import BellIcon from '../elements/icons/BellIcon'
-import Avatar from '../elements/Avatar'
+import ArrowIcon from '../../elements/icons/ArrowIcon'
+import BellIcon from '../../elements/icons/BellIcon'
+import Avatar from '../../elements/Avatar'
 
 const HomeHeaderBar = () => {
     const {theme} = useTheme()
@@ -48,7 +48,7 @@ const HomeHeaderBar = () => {
                         color: theme === 'dark' ? colors.silver : colors.outerSpace,
                         fontSize: 14,
                         fontFamily: 'Sora_400Regular',
-                    }}>Welcome</Text>
+                    }}>Hello 👋</Text>
                     <Text style={styles.title}>Immanuel Onum</Text>
                 </View>
             </View>

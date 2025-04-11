@@ -39,7 +39,8 @@ export const useGlobalStyles = () => {
       paddingVertical: 40,
       flex: 1, 
       justifyContent: 'flex-start', 
-      alignItems: 'flex-start',
+      // alignItems: 'flex-start',
+      // backgroundColor: 'red',
       backgroundColor: theme === 'dark' ? colors.night : colors.whiteSmoke
     }
   });
